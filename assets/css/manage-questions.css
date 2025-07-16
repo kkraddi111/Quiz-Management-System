@@ -1,0 +1,134 @@
+/* Question List Styles */
+.question-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.question-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.question-list th, .question-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.question-list th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.question-list tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn {
+    background-color: #28a745;
+    margin-bottom: 20px;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Question Form Styles */
+.question-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.save-btn {
+    background-color: #28a745;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .question-list {
+        overflow-x: auto;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        margin-bottom: 5px;
+    }
+}

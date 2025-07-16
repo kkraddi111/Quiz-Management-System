@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --accent-color: #FFD93D;
+    --text-color: #2C3E50;
+    --background-color: #F7F9FC;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.course-image-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.course-image-container:hover {
+    transform: scale(1.02);
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.no-image {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+}
+
+.course-title {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.course-details {
+    background-color: var(--background-color);
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.course-details p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.course-details strong {
+    color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+    transform: translateY(-2px);
+}
+
+/* Reviews section styles */
+.reviews-section {
+    margin-top: 3rem;
+}
+
+.reviews-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.reviews-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 10px auto 0;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.review-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.review-card .card-subtitle {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.review-card .card-text {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.review-card .text-muted {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Review form styles */
+.review-form {
+    background-color: var(--background-color);
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.review-form .form-label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.review-form .form-select,
+.review-form .form-control {
+    margin-bottom: 1rem;
+    border-color: #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+.review-form .form-select:focus,
+.review-form .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(255, 217, 61, 0.25);
+}
+
+.review-form textarea {
+    resize: vertical;
+}
+
+/* Edit review form styles */
+#edit-review-form {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+}
+
+#edit-review-form h2 {
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .course-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .course-header .btn {
+        margin-top: 1rem;
+    }
+
+    .course-title {
+        font-size: 2rem;
+    }
+
+    .btn-block {
+        margin-bottom: 1.5rem;
+    }
+}

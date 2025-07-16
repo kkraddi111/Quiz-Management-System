@@ -1,0 +1,633 @@
+/* Student-specific styles */
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding to the left and right */
+    width: 90%; /* Set width to 90% of the viewport */
+}
+
+/* Student Header Styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header #branding {
+    display: flex;
+    align-items: center;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    padding: 0 15px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header .highlight, header .current a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+header i {
+    margin-right: 5px;
+}
+
+/* Dashboard Styles */
+.dashboard-header {
+    background-color: rgb(140, 201, 187);
+    color: #4a4a4a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px; /* Add margin to the top */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h1 {
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+.last-login {
+    color: #6c6c6c;
+    font-size: 0.9em;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.dashboard-section {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 300px;
+}
+
+.dashboard-section h2 {
+    color: #333333;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-section h2 i {
+    margin-right: 10px;
+    color: #a67c00;
+}
+
+/* Course and Quiz Lists */
+.course-list, .quiz-attempts-list {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.course-list li, .quiz-attempts-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.course-list li:hover {
+    background-color: #e9ecef;
+}
+
+.course-list a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+.course-list a:hover {
+    color: #000000;
+}
+
+.quiz-attempts-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quiz-title {
+    font-weight: bold;
+    color: #333333;
+}
+
+.quiz-score {
+    color: #a67c00;
+    font-weight: bold;
+}
+
+.quiz-date {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #a67c00;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.btn:hover {
+    background-color: #805e00;
+}
+
+.btn-primary, .btn-secondary {
+    background-color: #a67c00;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #805e00;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.btn-enroll {
+    background-color: #a67c00;
+    color: #ffffff;
+}
+
+.btn-enroll:hover {
+    background-color: #805e00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Add this style to your existing CSS */
+main.container {
+    padding-top: 20px;
+}
+
+/* Available Courses Styles */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.course-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.course-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.enroll-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a67c00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.enroll-btn:hover {
+    background-color: #805e00;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course-card {
+    animation: fadeInUp 0.5s ease-out forwards;
+    opacity: 0;
+}
+
+.course-card:nth-child(1) { animation-delay: 0.1s; }
+.course-card:nth-child(2) { animation-delay: 0.2s; }
+.course-card:nth-child(3) { animation-delay: 0.3s; }
+.course-card:nth-child(4) { animation-delay: 0.4s; }
+/* Add more if needed */
+
+.error, .success {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+/* Add these styles to the end of your existing student.css file */
+
+/* About Us and Contact Us Pages Styles */
+.container h1 {
+    color: #e8491d;
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.container p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container ul li {  
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.container ul li:before {
+    content: "\2022";
+    color: #a67c00;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Contact Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.contact-info h2 {
+    color: #a67c00;
+    margin-top: 0;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info strong {
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        font-size: 14px;
+    }
+}
+
+/* Add these styles at the end of your existing student.css file */
+
+/* Course Preview Styles */
+.course-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.course-info {
+    flex: 1 1 60%;
+    min-width: 300px;
+}
+
+.course-image-container {
+    flex: 1 1 30%;
+    min-width: 300px;
+    position: sticky;
+    top: 20px;
+}
+
+.course-image {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.course-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.course-preview h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #a67c00;
+    padding-bottom: 10px;
+}
+
+.description, .requirements {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.requirements ul {
+    padding-left: 20px;
+}
+
+.rating {
+    font-size: 24px;
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+.rating span {
+    color: #333;
+    font-size: 0.8em;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+
+.review {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.review-author {
+    font-weight: bold;
+    color: #a67c00;
+    margin-bottom: 5px;
+}
+
+.start-quiz-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #a67c00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.start-quiz-btn:hover {
+    background-color: #805e00;
+}
+
+.user-review-form {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.user-review-form h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.rating-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.rating-input input {
+    display: none;
+}
+
+.rating-input label {
+    cursor: pointer;
+    font-size: 25px;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.rating-input label:hover,
+.rating-input label:hover ~ label,
+.rating-input input:checked ~ label {
+    color: #f1c40f;
+}
+
+.comment-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+.submit-review-btn {
+    background-color: #a67c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-review-btn:hover {
+    background-color: #805e00;
+}
+
+@media (max-width: 768px) {
+    .course-preview {
+        flex-direction: column;
+    }
+
+    .course-image-container {
+        position: static;
+        order: -1;
+    }
+
+    .course-preview h1 {
+        font-size: 2em;
+    }
+}

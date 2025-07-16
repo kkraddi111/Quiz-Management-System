@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a.active {
+    background-color: #4CAF50;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-card {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+}
+
+.stat-card p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Add these styles to the existing teacher-styles.css file */
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.course-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.course-table tr:hover {
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,165 @@
+/* Manage Teachers Styles */
+.teacher-list {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.teacher-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.teacher-list th, .teacher-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.teacher-list th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.teacher-list tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status-pending {
+    color: #ffa500;
+}
+
+.status-approved {
+    color: #28a745;
+}
+
+.status-rejected {
+    color: #dc3545;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.approve-btn {
+    background-color: #28a745;
+}
+
+.approve-btn:hover {
+    background-color: #218838;
+}
+
+.reject-btn {
+    background-color: #dc3545;
+}
+
+.reject-btn:hover {
+    background-color: #c82333;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Edit Form Styles */
+.edit-form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.save-btn,
+.cancel-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.error {
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teacher-list {
+        overflow-x: auto;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        margin-bottom: 5px;
+    }
+}
+
+/* Add or update this in your manage-teachers.css file */
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
