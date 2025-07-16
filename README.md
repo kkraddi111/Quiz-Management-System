@@ -1,20 +1,20 @@
 QuizHub - Online Quiz Management System
 
 <p align="center">
-  <a href="https://github.com/kkraddi111/QuizHub">
-    <img src="https://img.shields.io/github/license/kkraddi111/QuizHub?style=flat-square" alt="License">
+  <a href="https://github.com/kkraddi111/Quiz-Management-System">
+    <img src="https://img.shields.io/github/license/kkraddi111/Quiz-Management-System?style=flat-square" alt="License">
   </a>
-  <a href="https://github.com/kkraddi111/QuizHub/issues">
-    <img src="https://img.shields.io/github/issues/kkraddi111/QuizHub?style=flat-square" alt="Issues">
+  <a href="https://github.com/kkraddi111/Quiz-Management-System/issues">
+    <img src="https://img.shields.io/github/issues/kkraddi111/Quiz-Management-System?style=flat-square" alt="Issues">
   </a>
-  <a href="https://github.com/kkraddi111/QuizHub/pulls">
-    <img src="https://img.shields.io/github/issues-pr/kkraddi111/QuizHub?style=flat-square" alt="Pull Requests">
+  <a href="https://github.com/kkraddi111/Quiz-Management-System/pulls">
+    <img src="https://img.shields.io/github/issues-pr/kkraddi111/Quiz-Management-System?style=flat-square" alt="Pull Requests">
   </a>
   <img src="https://img.shields.io/badge/PHP-%3E%3D7.0-blue?style=flat-square" alt="PHP Version">
   <img src="https://img.shields.io/badge/MySQL-Supported-blue?style=flat-square" alt="MySQL Supported">
-  <img src="https://img.shields.io/github/last-commit/kkraddi111/QuizHub?style=flat-square" alt="Last Commit">
-  <img src="https://img.shields.io/github/stars/kkraddi111/QuizHub?style=flat-square" alt="Stars">
-  <img src="https://img.shields.io/github/forks/kkraddi111/QuizHub?style=flat-square" alt="Forks">
+  <img src="https://img.shields.io/github/last-commit/kkraddi111/Quiz-Management-System?style=flat-square" alt="Last Commit">
+  <img src="https://img.shields.io/github/stars/kkraddi111/Quiz-Management-System?style=flat-square" alt="Stars">
+  <img src="https://img.shields.io/github/forks/kkraddi111/Quiz-Management-System?style=flat-square" alt="Forks">
 </p>
 
 QuizHub is a comprehensive online quiz management system that facilitates interaction between administrators, teachers, and students. The platform enables quiz creation, management, and assessment in an educational environment.
