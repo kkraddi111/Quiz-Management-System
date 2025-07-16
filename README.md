@@ -1,4 +1,4 @@
-QuizHub - Online Quiz Management System
+QuizHub - Quiz Management System
 
 <p align="center">
   <img src="https://img.shields.io/badge/PHP-%3E%3D7.0-blue?style=flat-square" alt="PHP Version">
