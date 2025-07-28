@@ -1,8 +1,6 @@
 QuizHub - Online Quiz Management System
 
 <p align="center">
-  <a href="https://github.com/kkraddi111/Quiz-Management-System">
-    <img src="https://img.shields.io/github/license/kkraddi111/Quiz-Management-System?style=flat-square" alt="License">
   <img src="https://img.shields.io/badge/PHP-%3E%3D7.0-blue?style=flat-square" alt="PHP Version">
   <img src="https://img.shields.io/badge/MySQL-Supported-blue?style=flat-square" alt="MySQL Supported">
 </p>
