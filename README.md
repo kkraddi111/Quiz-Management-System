@@ -1,6 +1,8 @@
-QuizHub - Quiz Management System
+QuizHub - Online Quiz Management System
 
 <p align="center">
+  <a href="https://github.com/kkraddi111/Quiz-Management-System">
+    <img src="https://img.shields.io/github/license/kkraddi111/Quiz-Management-System?style=flat-square" alt="License">
   <img src="https://img.shields.io/badge/PHP-%3E%3D7.0-blue?style=flat-square" alt="PHP Version">
   <img src="https://img.shields.io/badge/MySQL-Supported-blue?style=flat-square" alt="MySQL Supported">
 </p>
@@ -13,27 +15,65 @@ QuizHub is a comprehensive online quiz management system that facilitates intera
   🛡️ Admin Features
     📊 Dashboard overview with key statistics
     👩‍🏫 Manage teachers and students
-    📚 Course management
+    📚 Course and content management
     🗂️ Question bank oversight
     🕑 Quiz history tracking
     💬 Feedback management
     🙍‍♂️ User profile management
+    ✅ Teacher approval system
+    🖼️ Course image management
 
   👨‍🏫 Teacher Features
     📚 Create and manage courses
     ✏️ Create and edit questions
-    🔢 Multiple question types support (Multiple Choice, True/False)
+    🔢 Support for multiple question types:
+        • Multiple Choice Questions
+        • True/False Questions
+        • Short Answer Questions
     📝 Quiz creation and management
     📈 Student performance tracking
     💬 Provide feedback on quiz attempts
-    📑 Generate reports
+    📑 Generate detailed reports
+    🎯 Set question difficulty (Easy, Medium, Hard)
+    📖 Add explanations for questions
+    ⏱️ Customize quiz duration
 
   👨‍🎓 Student Features
-    📝 Take quizzes
+    📝 Take quizzes with:
+        • Randomized question selection
+        • Dynamic difficulty levels
+        • Real-time progress tracking
+        • Timed quiz sessions
     📖 View course materials
-    📊 Track progress
-    🏅 View performance history
-    💬 Submit feedback
+    📊 Track progress and performance
+    🏅 View detailed quiz history
+    💬 Submit feedback and reviews
+    ⭐ Rate courses
+    📚 Course enrollment system
+
+  📚 Course Management
+    👨‍🏫 Multiple teachers per course
+    📝 Course descriptions and materials
+    🖼️ Course image uploads
+    ⭐ Rating and review system
+    📊 Course performance analytics
+    ✅ Student enrollment tracking
+
+  🎯 Question Management
+    🔄 Three difficulty levels: Easy, Medium, Hard
+    📝 Multiple question types support
+    🎲 Random question selection
+    ❓ Question explanations
+    📊 Performance analytics by question type
+    🏷️ Course-specific question banks
+
+  📊 Assessment System
+    ⏱️ Customizable quiz duration
+    📈 Real-time progress tracking
+    🎯 Difficulty-based question selection
+    📝 Detailed performance analytics
+    🔄 Multiple attempt support
+    💡 Post-quiz explanations
 
 
 🛠️ Technical Stack
@@ -56,7 +96,7 @@ QuizHub is a comprehensive online quiz management system that facilitates intera
 
 🗄️ Database Configuration
 
-    Update the `config/db.php` file with your database credentials: 
+    Update the `config/db.php` file with your database credentials.
 
 
 🔒 Security Features
@@ -66,6 +106,7 @@ QuizHub is a comprehensive online quiz management system that facilitates intera
     🧹 XSS protection
     🗝️ Session management
     🏷️ Role-based access control
+    ✅ Teacher approval system
 
 
 🤝 Contributing
@@ -82,4 +123,3 @@ QuizHub is a comprehensive online quiz management system that facilitates intera
     ⭐ FontAwesome for icons
     ⭐ jQuery community
     ⭐ PHP community
-
